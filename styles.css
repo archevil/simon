@@ -3,7 +3,11 @@ body {
   background-color: #011F3F;
 }
 
-#level-title {
+.us{
+  background-image: url("images/us.gif");
+}
+
+h1, h2, h3{
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   margin:  5%;
@@ -24,6 +28,10 @@ body {
   width: 200px;
   border: 10px solid black;
   border-radius: 20%;
+}
+
+.btn-hide{
+  display:none;
 }
 
 .game-over {
