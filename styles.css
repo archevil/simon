@@ -83,13 +83,10 @@ h2, h3{
     font-size: 3rem;
   }
 
-
   .titlePC{
     display:none;
   }
 }
-
-
 
 @media (min-width:1920px) {
   .titleMobile{

@@ -80,7 +80,7 @@ $(document).ready(function() {
 
     } else {
       playSound("wrong");
-      if ($(window).width() < 960) {
+      if ($(window).width() < 1900) {
         $("h1").text("Game over, press start for a new game");
         $(".mobileButton").show();
       }
