@@ -3,22 +3,21 @@ body {
   background-color: #011F3F;
 }
 
-.us{
+.us {
   background-image: url("images/us.gif");
-  background-size: auto;
 }
 
-h1{
+h1 {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  5%;
+  margin: 5%;
   color: #FEF2BF;
 }
 
-h2, h3{
+h2, h3 {
   font-family: 'Press Start 2P', cursive;
   font-size: 2rem;
-  margin:  5%;
+  margin: 5%;
   color: #FEF2BF;
 }
 
@@ -26,7 +25,6 @@ h2, h3{
   display: block;
   width: 50%;
   margin: auto;
-
 }
 
 .btn {
@@ -38,8 +36,8 @@ h2, h3{
   border-radius: 20%;
 }
 
-.btn-hide{
-  display:none;
+.btn-hide {
+  display: none;
 }
 
 .game-over {
@@ -68,13 +66,12 @@ h2, h3{
   background-color: grey;
 }
 
-.mobileButton{
+.mobileButton {
   display: none;
-
 }
 
 @media (max-width:1800px) {
-  .mobileButton{
+  .mobileButton {
     margin: 25px;
     display: inline-block;
     height: 200px;
@@ -84,13 +81,13 @@ h2, h3{
     font-size: 3rem;
   }
 
-  .titlePC{
-    display:none;
+  .titlePC {
+    display: none;
   }
 }
 
 @media (min-width:1920px) {
-  .titleMobile{
-    display:none;
+  .titleMobile {
+    display: none;
   }
 }
