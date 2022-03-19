@@ -92,7 +92,7 @@ function checkAnswer(currentLevel) {
     $("h2").text("Highscore : Level " + highScore);
     if (highScore >= 10) {
       $("h1").text("");
-      $("h2").text("");
+      $("h2").text("Congratulations, your highscore is "+level);
       $("h3").text("Made especially for Cierra, thank you for being you! ❤️");
       $("body").addClass("us");
       $(".btn").addClass("btn-hide");
