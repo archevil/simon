@@ -72,7 +72,7 @@ h2, h3{
 
 }
 
-@media (max-width:1000px) {
+@media (max-width:1800px) {
   .mobileButton{
     margin: 25px;
     display: inline-block;
@@ -91,7 +91,7 @@ h2, h3{
 
 
 
-@media (min-width:1001px) {
+@media (min-width:1920px) {
   .titleMobile{
     display:none;
   }
