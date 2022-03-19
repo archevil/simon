@@ -93,6 +93,7 @@ function checkAnswer(currentLevel) {
     if (highScore >= 10) {
       $("h1").text("");
       $("h2").text("You and WinWin");
+      $("h2").css('color', #F7E2E2);
       $("h3").text("Made especially for Cierra, thank you for being you! ❤️");
       $("body").addClass("us");
       $(".btn").addClass("btn-hide");
