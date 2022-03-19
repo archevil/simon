@@ -5,6 +5,7 @@ body {
 
 .us{
   background-image: url("images/us.gif");
+  background-size: auto;
 }
 
 h1{

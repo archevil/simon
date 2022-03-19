@@ -88,13 +88,14 @@ $(document).ready(function() {
         $("h1").text("Game over, press any key to restart");
       };
       $("h2").text("Highscore : Level "+highScore);
-      if (highScore>= 3){
+      if (highScore>= 1){
         $("h1").text("");
         $("h2").text("");
         $("h3").text("Made especially for Cierra, thank you for being you! ❤️");
         $("body").addClass("us");
         $(".btn").addClass("btn-hide");
         $(".btn").removeClass("btn");
+        $(".mobileButton").hide();
       };
       $("body").addClass("game-over");
       setTimeout(() => {$("body").removeClass("game-over");}, 200);
@@ -108,4 +109,5 @@ $(document).ready(function() {
     userClickedPattern = [];
     gamePattern = [];
     currentPattern = [];
+
   }
