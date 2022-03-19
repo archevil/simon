@@ -7,9 +7,16 @@ body {
   background-image: url("images/us.gif");
 }
 
-h1, h2, h3{
+h1{
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+h2, h3{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
   margin:  5%;
   color: #FEF2BF;
 }
@@ -58,4 +65,34 @@ h1, h2, h3{
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+.mobileButton{
+  display: none;
+
+}
+
+@media (max-width:1000px) {
+  .mobileButton{
+    margin: 25px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
+    font-size: 3rem;
+  }
+
+
+  .titlePC{
+    display:none;
+  }
+}
+
+
+
+@media (min-width:1001px) {
+  .titleMobile{
+    display:none;
+  }
 }

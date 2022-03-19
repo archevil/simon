@@ -17,13 +17,27 @@ $(document).keydown(function() {
   }
 });
 
+$(document).ready(function() {
+  $(".mobileButton").click(function(){
+    if (inGame === false) {
+      inGame = true;
+      nextSequence();
+      $("h1").text("Level " + (level));
+      $("h3").text("");
+      $(".mobileButton").hide();
+    }
+  });
+});
+
   $(".btn").click(function() {
+    if (inGame === true) {
     userChosenColour = $(this).attr('id');
     userClickedPattern.push(userChosenColour);
     playSound(userChosenColour);
     animatePress(userChosenColour);
     currentLevel = userClickedPattern.length;
     checkAnswer(currentLevel);
+  }
   })
 
   function nextSequence() {
@@ -66,9 +80,15 @@ $(document).keydown(function() {
 
     } else {
       playSound("wrong");
-      $("h1").text("Game over, press any key to restart");
+      if ($(window).width() < 960) {
+        $("h1").text("Game over, press start for a new game");
+        $(".mobileButton").show();
+      }
+      else {
+        $("h1").text("Game over, press any key to restart");
+      };
       $("h2").text("Highscore : Level "+highScore);
-      if (highScore>= 10){
+      if (highScore>= 3){
         $("h1").text("");
         $("h2").text("");
         $("h3").text("Made especially for Cierra, thank you for being you! ❤️");
@@ -78,7 +98,7 @@ $(document).keydown(function() {
       };
       $("body").addClass("game-over");
       setTimeout(() => {$("body").removeClass("game-over");}, 200);
-      startOver()
+      startOver();
     };
   }
 
